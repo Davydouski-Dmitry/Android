@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"> Android домашнее задание </string>
+    <string name="Hello_Dmitry"> Приветствую Дмитрий!!! </string>
+    <string name="Take_it_easy"> Расслабся!!! </string>
+    <string name="Set"> Переставить </string>
+    <string name="GoHome"> На стартовую страницу </string>
+
+    <string name="Homework1"> Домашнее задание №1 </string>
+    <string name="Homework2"> Домашнее задание №2 </string>
+    <string name="Homework3"> Домашнее задание №3 </string>
+</resources>
