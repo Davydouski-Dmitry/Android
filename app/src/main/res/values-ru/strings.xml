@@ -8,4 +8,7 @@
     <string name="Homework1"> Домашнее задание №1 </string>
     <string name="Homework2"> Домашнее задание №2 </string>
     <string name="Homework3"> Домашнее задание №3 </string>
+
+    <string name="Download"> Загрузить </string>
+    <string name="Link_to_picture"> Ссылка на картинку </string>
 </resources>

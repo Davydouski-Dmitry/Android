@@ -8,6 +8,12 @@ import android.widget.Toast;
 
 public class SecondActivity extends Activity{
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_second);
+    }
+
     /*public static final int BUTTON_ONE_KEY = 1;
     public static final int BUTTON_TWO_KEY = 2;
     public static final String BUTTON_KEY_NAME = "BUTTON_KEY_NAME";

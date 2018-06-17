@@ -1,6 +1,5 @@
 package com.davydouski.androidpvt;
 
-import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,11 +23,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            /*if(view.getId()==R.id.button4){ //переход с одной активити на другую
-                SecondActivity.show(MainActivity.this, SecondActivity.BUTTON_ONE_KEY);
+            if(view.getId()== R.id.button4){ //переход с одной активити на другую
+                StartActivity.show(MainActivity.this, StartActivity.BUTTON_ONE_KEY);
             } else {
-                SecondActivity.show(MainActivity.this, SecondActivity.BUTTON_TWO_KEY);
-            }*/
+                StartActivity.show(MainActivity.this, StartActivity.BUTTON_TWO_KEY);
+            }
         }
     };
 
