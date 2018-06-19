@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 
-public class ThirdActivity extends AppCompatActivity{
+public class Homework3 extends AppCompatActivity{
 
     Button button;
     EditText editText;
@@ -25,7 +25,6 @@ public class ThirdActivity extends AppCompatActivity{
         editText = (EditText)findViewById(R.id.textViewNet);
         imageView = (ImageView) findViewById(R.id.imageViewNet);
 
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,11 +32,10 @@ public class ThirdActivity extends AppCompatActivity{
             }
         });
 
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ThirdActivity.this,StartActivity.class);
+                Intent intent = new Intent(Homework3.this,StartActivity.class);
                 startActivity(intent);
             }
         });

@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Homework1 extends AppCompatActivity implements View.OnClickListener {
 
     private TextView tx1;
     private TextView tx2;
@@ -19,18 +19,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
     }
 
-
     private View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             if(view.getId()== R.id.button4){ //переход с одной активити на другую
-                StartActivity.show(MainActivity.this, StartActivity.BUTTON_ONE_KEY);
+                StartActivity.show(Homework1.this, StartActivity.BUTTON_ONE_KEY);
             } else {
-                StartActivity.show(MainActivity.this, StartActivity.BUTTON_TWO_KEY);
+                StartActivity.show(Homework1.this, StartActivity.BUTTON_TWO_KEY);
             }
         }
     };
-
 
     @Override
     public void onClick(View view) {
@@ -43,25 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tx2.setOnClickListener(clickListener);
         buttonClick.setOnClickListener(clickListener);
 
-
         noTx.setText(tx1.getText().toString());
         tx1.setText(tx2.getText().toString());
         tx2.setText(noTx.getText().toString());
         noTx.setText("");
-
-        /*noTx.setText(tx1.getText().toString());
-        ColorDrawable colorDrawable0 = (ColorDrawable) tx1.getBackground();
-        int color0 = colorDrawable0.getColor();
-        noTx.setBackgroundColor(color0);
-
-        tx1.setText(tx2.getText().toString());
-        ColorDrawable colorDrawable1 = (ColorDrawable) tx2.getBackground();
-        int color1 = colorDrawable1.getColor();
-        tx1.setBackgroundColor(color1);
-
-        tx2.setText(noTx.getText().toString());
-        ColorDrawable colorDrawable2 = (ColorDrawable) noTx.getBackground();
-        int color2 = colorDrawable2.getColor();
-        tx2.setBackgroundColor(color2);*/
     }
 }

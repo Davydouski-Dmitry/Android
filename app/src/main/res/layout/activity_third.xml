@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8bd0ed"
-    tools:context=".ThirdActivity">
+    tools:context=".Homework3">
 
 
     <EditText
@@ -14,19 +14,14 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
         android:hint="@string/Link_to_picture"
-        android:text="https://cs4.pikabu.ru/post_img/big/2016/08/05/11/1470421507128644595.jpg"
+        android:text="http://www.radionetplus.ru/uploads/posts/2013-04/1365573073_oboi-priroda-38.jpg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewNet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginTop="400dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="404dp"
+        android:layout_height="418dp" />
 
     <Button
         android:id="@+id/buttonNet"
