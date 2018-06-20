@@ -19,7 +19,7 @@ public class Homework3 extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_homework3);
 
         button = (Button)findViewById(R.id.buttonNet);
         editText = (EditText)findViewById(R.id.textViewNet);

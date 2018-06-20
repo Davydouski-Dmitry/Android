@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Homework1">
+        <activity
+            android:name=".Homework1"
+            android:theme="@style/AnimationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +23,9 @@
 
         <activity android:name=".Homework2"/>
         <activity android:name=".Homework3"/>
-        <activity android:name=".StartActivity"/>
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/AnimationActivity"/>
 
     </application>
 

@@ -16,7 +16,7 @@ public class Homework1 extends AppCompatActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_homework1);
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {

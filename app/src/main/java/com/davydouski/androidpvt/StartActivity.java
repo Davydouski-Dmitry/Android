@@ -8,11 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class StartActivity extends Activity implements View.OnClickListener{
+public class StartActivity extends Activity{
 
     public static final int BUTTON_ONE_KEY = 1;
     public static final int BUTTON_TWO_KEY = 2;
     public static final String BUTTON_KEY_NAME = "BUTTON_KEY_NAME";
+
+
 
     public static void show(Activity activity, int key) {
         Intent intent = new Intent(activity, StartActivity.class);
@@ -34,16 +36,38 @@ public class StartActivity extends Activity implements View.OnClickListener{
             Toast.makeText(this, "Button 2", Toast.LENGTH_SHORT)
                     .show();
         }
-    }
 
 
-   @Override
-    public void onClick(View view) {
+
+
+
         Button butnClickHW1 = (Button) findViewById(R.id.buttonHW1);
-        Button butnClickHW2 = (Button) findViewById(R.id.buttonHW2);
-        Button butnClickHW3 = (Button) findViewById(R.id.buttonHW3);
+        butnClickHW1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(StartActivity.this,Homework1.class);
+                startActivity(intent);
+            }
+        });
 
-        Intent intent = new Intent(StartActivity.this,Homework2.class);
-        startActivity(intent);
+        Button butnClickHW2 = (Button) findViewById(R.id.buttonHW2);
+        butnClickHW1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(StartActivity.this,Homework2.class);
+                startActivity(intent);
+            }
+        });
+
+        Button butnClickHW3 = (Button) findViewById(R.id.buttonHW3);
+        butnClickHW1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(StartActivity.this,Homework3.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 }
