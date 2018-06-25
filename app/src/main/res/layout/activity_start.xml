@@ -33,7 +33,7 @@
         android:id="@+id/buttonHW3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="20dp"
         android:text="@string/Homework3"
         app:layout_constraintStart_toStartOf="@+id/buttonHW2"
         app:layout_constraintTop_toBottomOf="@+id/buttonHW2"
@@ -43,8 +43,18 @@
         android:id="@+id/buttonHW4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="92dp"
         android:text="@string/Homework4"
+        app:layout_constraintStart_toStartOf="@+id/buttonHW2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHW2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonHW5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="@string/Homework5"
         app:layout_constraintStart_toStartOf="@+id/buttonHW2"
         app:layout_constraintTop_toBottomOf="@+id/buttonHW2"
         tools:ignore="MissingConstraints" />

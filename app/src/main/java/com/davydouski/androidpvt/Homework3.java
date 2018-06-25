@@ -13,6 +13,7 @@ import com.squareup.picasso.Picasso;
 public class Homework3 extends AppCompatActivity{
 
     Button button;
+    Button button2;
     EditText editText;
     ImageView imageView;
 
@@ -22,6 +23,7 @@ public class Homework3 extends AppCompatActivity{
         setContentView(R.layout.activity_homework3);
 
         button = (Button)findViewById(R.id.buttonNet);
+        button2 = (Button)findViewById(R.id.buttonNet2);
         editText = (EditText)findViewById(R.id.textViewNet);
         imageView = (ImageView) findViewById(R.id.imageViewNet);
 
@@ -32,7 +34,7 @@ public class Homework3 extends AppCompatActivity{
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Homework3.this,StartActivity.class);

@@ -8,6 +8,16 @@
     tools:context=".Homework3">
 
 
+    <Button
+        android:id="@+id/buttonNet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="148dp"
+        android:text="@string/GoHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <EditText
         android:id="@+id/textViewNet"
         android:layout_width="wrap_content"
@@ -15,13 +25,18 @@
         android:layout_marginBottom="80dp"
         android:hint="@string/Link_to_picture"
         android:text="http://www.radionetplus.ru/uploads/posts/2013-04/1365573073_oboi-priroda-38.jpg"
+        android:inputType="textUri"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewNet"
-        android:layout_width="404dp"
-        android:layout_height="418dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonNet"
@@ -32,5 +47,7 @@
         android:text="@string/Download"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 
 </android.support.constraint.ConstraintLayout>

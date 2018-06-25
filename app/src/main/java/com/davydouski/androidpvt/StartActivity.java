@@ -51,7 +51,7 @@ public class StartActivity extends Activity{
         });
 
         Button butnClickHW2 = (Button) findViewById(R.id.buttonHW2);
-        butnClickHW1.setOnClickListener(new View.OnClickListener(){
+        butnClickHW2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(StartActivity.this,Homework2.class);
@@ -60,13 +60,35 @@ public class StartActivity extends Activity{
         });
 
         Button butnClickHW3 = (Button) findViewById(R.id.buttonHW3);
-        butnClickHW1.setOnClickListener(new View.OnClickListener(){
+        butnClickHW3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(StartActivity.this,Homework3.class);
                 startActivity(intent);
             }
         });
+
+        Button butnClickHW4 = (Button) findViewById(R.id.buttonHW4);
+        butnClickHW4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(StartActivity.this,Homework4.class);
+                startActivity(intent);
+            }
+        });
+
+        Button butnClickHW5 = (Button) findViewById(R.id.buttonHW5);
+        butnClickHW5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(StartActivity.this,Homework5.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 
 

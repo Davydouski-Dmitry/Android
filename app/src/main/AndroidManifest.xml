@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.davydouski.androidpvt">
 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -20,13 +25,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Homework2"/>
-        <activity android:name=".Homework3"/>
+        <activity android:name=".Homework2" />
+        <activity android:name=".Homework3" />
+        <activity android:name=".Homework4" />
+        <activity android:name=".Homework5" />
         <activity
             android:name=".StartActivity"
-            android:theme="@style/AnimationActivity"/>
+            android:theme="@style/AnimationActivity" />
 
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
