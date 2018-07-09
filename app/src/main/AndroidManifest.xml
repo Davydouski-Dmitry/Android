@@ -4,9 +4,6 @@
 
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
-
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -29,6 +26,8 @@
         <activity android:name=".Homework3" />
         <activity android:name=".Homework4" />
         <activity android:name=".Homework5" />
+        <activity android:name=".Homework6.HW6student"/>
+
         <activity
             android:name=".StartActivity"
             android:theme="@style/AnimationActivity" />
@@ -36,7 +35,7 @@
         <service
             android:name=".MyService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
     </application>
 
 </manifest>

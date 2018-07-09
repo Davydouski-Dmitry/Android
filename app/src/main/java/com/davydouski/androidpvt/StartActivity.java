@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.davydouski.androidpvt.Homework6.HW6student;
+
 public class StartActivity extends Activity{
 
     public static final int BUTTON_ONE_KEY = 1;
@@ -77,6 +79,7 @@ public class StartActivity extends Activity{
             }
         });
 
+
         Button butnClickHW5 = (Button) findViewById(R.id.buttonHW5);
         butnClickHW5.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -86,8 +89,14 @@ public class StartActivity extends Activity{
             }
         });
 
-
-
+        Button butnClickHW6 = (Button) findViewById(R.id.buttonHW6);
+        butnClickHW6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(StartActivity.this,HW6student.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homework6.HW6student">
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:background="@android:color/darker_gray"
+
+        android:layout_marginBottom="100dp"/>
+
+    <EditText
+        android:id="@+id/editText_edit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="13dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText_edit"
+        android:layout_toEndOf="@+id/editText_edit"
+        android:text="EDIT" />
+
+
+    <EditText
+        android:id="@+id/editText_delete"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText_edit"
+        android:layout_marginEnd="110dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText_edit"
+        android:layout_marginStart="-110dp"
+        android:layout_toEndOf="@+id/editText_delete"
+        android:text="DELETE" />
+
+</RelativeLayout>
